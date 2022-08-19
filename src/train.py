@@ -390,7 +390,8 @@ class CommaSeparatedList(click.ParamType):
 
 def main():
     dnnlib.util.Logger(should_flush=True)
-    cfg = OmegaConf.load("experiment_config.yaml")
+    # cfg = OmegaConf.load("experiment_config.yaml")
+    cfg = OmegaConf.load("../experiments/sky_timelapse_256_stylegan-v_random3_max32_my_experiment_name-e2f9580/experiment_config.yaml")
     OmegaConf.set_struct(cfg, True)
 
     # Setup training options.
