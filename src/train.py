@@ -10,6 +10,7 @@
 "Training Generative Adversarial Networks with Limited Data"."""
 
 import sys; sys.path.extend(['.'])
+sys.path.append('..')
 import os
 import click
 import shutil
