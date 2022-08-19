@@ -7,11 +7,12 @@ This is the main entry-point
 import os
 import subprocess
 import re
+import sys
 
 import hydra
 from omegaconf import DictConfig, OmegaConf
 from pathlib import Path
-
+sys.path.append('.')
 from src.infra.utils import create_project_dir, recursive_instantiate
 
 #----------------------------------------------------------------------------
