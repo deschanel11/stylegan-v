@@ -87,7 +87,7 @@ def process_hyperparams(cfg: DictConfig):
     assert c.data is not None
     assert isinstance(c.data, str)
     assert cfg.model.loss_kwargs.style_mixing_prob == 0, "Not supported"
-
+    c.data = 'data/sky_timelapse.zip'
     args.training_set_kwargs = dnnlib.EasyDict(
         class_name='training.dataset.VideoFramesFolderDataset',
         path=c.data, cfg=cfg.dataset, use_labels=True, max_size=None, xflip=False)
